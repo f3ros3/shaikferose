@@ -1,4 +1,22 @@
-<h2 style="color:blue"> 
-  hello 
-</h2>
-  
+ <!doctype html>
+<html>
+<head>
+<style>
+ body{ background-color:white; }
+ #canvasHtml5{border:1px solid red; }
+ #canvasJavascript{border:1px solid blue; }
+</style>
+<script>
+window.onload=(function(){
+ // add a canvas element using javascript
+ var canvas=document.createElement('canvas');
+ canvas.id='canvasJavascript'
+ document.body.appendChild(canvas);
+}); // end $(function(){});
+</script>
+</head>
+<body>
+ <!-- add a canvas element using html -->
+ <canvas id='canvasHtml5'></canvas>
+</body>
+</html>

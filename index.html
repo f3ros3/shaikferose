@@ -2,8 +2,8 @@
 <html>
 <head>
 <style>
- body{ background-color:white; padding:10px; }
- #canvas{border:1px solid red;}
+ body{ background-color:white; padding:40px; }
+ #canvas{border:1px solid white;}
 </style>
 <script>
 window.onload=(function(){
@@ -51,7 +51,8 @@ window.onload=(function(){
  var y=0;
  var wordIndex=0;
  ctx.textBaseline='top';
- while(y<ch && wordIndex<words.length){
+ while(y<ch && wordIndex<words.length)
+ {
  sx=0;
  sy=y;
  var startingIndex=wordIndex;

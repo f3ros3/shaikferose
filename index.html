@@ -2,9 +2,9 @@
 <html>
 <head>
 <style>
- body{ background-color:black; padding:400px; }
-  body{ background-color:black; padding:900px; }
- #canvas{border:10px solid red;}
+ body{ background-color:yellow; padding:40px; }
+  body{ background-color:yellow; padding:60px; }
+ #canvas{border:6px solid black;}
 </style>
 <script>
 window.onload=(function(){
@@ -12,10 +12,10 @@ window.onload=(function(){
  var ctx=canvas.getContext("3d");
  var cw=canvas.width;
  var ch=canvas.height;
- var fontsize=12;
+ var fontsize=10;
  var fontface='verdana';
  var lineHeight=parseInt(fontsize*1.286);
- var text=' ';
+ var text='hello!!!';
  var words=text.split(' ');
  var wordWidths=[];
  ctx.font=fontsize+'px '+fontface;
@@ -25,9 +25,9 @@ window.onload=(function(){
  var data=[];
  // Demo: draw Heart
  // Note: the shape can be ANY opaque drawing -- even an image
- ctx.scale(4,4);
+ ctx.scale(2,2);
  ctx.beginPath();
- ctx.moveTo(50,50);
+ ctx.moveTo(30,30);
  ctx.bezierCurveTo(75,37,70,25,50,25);
  ctx.bezierCurveTo(20,25,20,62.5,20,62.5);
  ctx.bezierCurveTo(20,80,40,102,75,120);
